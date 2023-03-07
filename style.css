@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+}
+.borderStyle{
+    border: solid 2px green;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+header *{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+header{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    box-shadow: 0px 5px 10px rgb(91, 74, 243);  
+}
+
+header section{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+header section:hover{
+    color: rgb(69, 120, 228);
+    cursor: pointer;
+}
+
+body main{
+    height: 87vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main #sideBarLeft{
+    flex-grow: 1;
+    background-color: lightgreen;
+}
+
+main #sideBarRight{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: lightgreen;
+}
+
+body footer{
+    display: flex;
+    height: 50px;
+    background-color: lightgreen;
+}
+
+
+main #mainContent{
+    flex-grow: 8;
+    background-color: lightblue;
+}
+
+
+nav{
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul>li{
+    min-width: 200px;
+}
+
+nav ul>li:hover{
+    color: rgb(69, 120, 228);
+    cursor: pointer;
+}
